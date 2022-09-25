@@ -6,7 +6,7 @@ function A = matrix_solver(vars, sols)
    [rows,columns] = size(vars);
    inverted = inv(vars);
    for i = 1:rows
-     solutions(end+1) = [dot(inverted(i,:), sols)]
+     solutions(end+1) = [dot(inverted(i,:), sols)];
    endfor
    A = solutions;
 end
